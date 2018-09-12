@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id="game_area" class="game_area">
+    <form id="config" name="config">
+        <select name="x">
+            <option selected value="0">Please Select Value</option>
+            {% for element in x %}
+            <option value="{{element}}">{{element}}</option>
+            {% endfor %}
+        </select>
+        <select name="y">
+            <option selected value="0">Please Select Value</option>
+            {% for element in y %}
+            <option value="{{element}}">{{element}}</option>
+            {% endfor %}
+        </select>
+        <i onclick="configure()" class="fas fa-play"></i>
+
+    </form>
+</div>
+{% endblock %}

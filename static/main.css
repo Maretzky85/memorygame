@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  justify-content: center
+}
+
+body {
+  margin: 20px 0;
+  background: rgb(249, 227, 101);
+}
+
+i {
+  font-size: 200%
+}
+
+.grid {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.card {
+  margin: 5px;
+  background-color: rgb(249, 227, 101);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50px;
+  width: 50px;
+}
+
+
+.selected {
+  border: 4px solid blue;
+}
+
+.match {
+  border: 1px solid red;
+}
